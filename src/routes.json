@@ -1,0 +1,66 @@
+[
+    {
+      "path": "/data",
+      "component": "Layout",
+      "children": [
+        {
+          "path": "info",
+          "component": 1
+        },
+        {
+          "path": "live",
+          "component": 1
+        }
+      ]
+    },
+    {
+      "path": "/setting",
+      "component": "Layout",
+      "children": [
+        {
+          "path": "chat",
+          "component": 1,
+          "children": [
+            {
+              "path": "chat",
+              "component": 1
+            },
+            {
+              "path": "safeScreen",
+              "component": 1
+            }
+          ]
+        },
+        {
+          "path": "safeScreen1",
+          "component": 1,
+          "children": [
+            {
+              "path": "chat",
+              "component": 1
+            },
+            {
+              "path": "safeScreen",
+              "component": 1
+            }
+            
+          ]
+        }
+        
+      ]
+    },
+    {
+        "path": "/data",
+        "component": "Layout",
+        "children": [
+          {
+            "path": "info",
+            "component": 1
+          },
+          {
+            "path": "live",
+            "component": 1
+          }
+        ]
+      }
+  ]
