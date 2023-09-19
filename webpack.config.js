@@ -2,6 +2,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+const myPlugin = require("./plugins/index.js");
 
 module.exports = {
   performance: {
@@ -13,7 +14,7 @@ module.exports = {
       return assetFilename.endsWith(".js");
     },
   },
-  mode: "production",
+  mode: "none",
   entry: {
     index123: "./src/index.js",
   },
@@ -32,6 +33,7 @@ module.exports = {
     }),
     // 压缩打包后css文件
     new OptimizeCSSAssetsPlugin(),
+    new myPlugin({ env: "development" }),
   ],
   devtool: "inline-source-map",
   devServer: {
