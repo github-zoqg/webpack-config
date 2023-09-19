@@ -1,6 +1,7 @@
 const { getOptions } = require("loader-utils");
-module.exports = function (compiler) {
-  console.log(compiler, getOptions(this), "compiler");
+
+module.exports = function (source) {
+  console.log(source, getOptions(this), "compiler");
   const options = JSON.stringify(getOptions(this));
   return `
     ${replaceFun.toString()}

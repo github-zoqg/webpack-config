@@ -11,7 +11,7 @@ module.exports = class myPlugin {
     compiler.hooks.emit.tap("emit", function () {
       console.log("emit+++");
     });
-    compiler.hooks.emit.tap("initialize", function () {
+    compiler.hooks.initialize.tap("initialize", function () {
       console.log("emitadsasd+++");
     });
     // fs.writeFile("compiler.txt", str, (err, res) => {

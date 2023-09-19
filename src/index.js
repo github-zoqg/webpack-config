@@ -5,6 +5,7 @@ import "./iconfonts/iconfont.css";
 import Icon from "./demo.gif";
 import printMe from "@/dir/print.js";
 import createInput from "@/dir/input.js";
+import "../loaders/my-loader-test-file";
 
 function component() {
   const element = document.createElement("div");
