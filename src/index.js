@@ -4,6 +4,7 @@ import "./style1.css";
 import "./iconfonts/iconfont.css";
 import Icon from "./demo.gif";
 import printMe from "@/dir/print.js";
+import createInput from "@/dir/input.js";
 
 function component() {
   const element = document.createElement("div");
@@ -36,3 +37,5 @@ function component() {
 
 console.log(module.hot, "module");
 document.body.appendChild(component());
+// 双向绑定的简单示例
+createInput();
